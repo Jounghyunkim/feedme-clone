@@ -9,6 +9,9 @@ vi.mock("next-themes", () => ({
   ThemeProvider: ({ children }: { children: React.ReactNode }) => children,
 }));
 
+// UserMenu is an async Server Component backed by Supabase; not part of this test.
+vi.mock("@/components/auth/user-menu", () => ({ UserMenu: () => null }));
+
 afterEach(() => vi.unstubAllGlobals());
 
 const page = {

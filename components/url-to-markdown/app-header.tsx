@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { ThemeToggle } from "@/components/url-to-markdown/theme-toggle";
 
-export function AppHeader() {
+export function AppHeader({ actions }: { actions?: React.ReactNode }) {
   return (
     <header className="flex items-center justify-between py-2">
       <div className="flex items-center gap-2 text-base font-semibold">
@@ -25,7 +25,10 @@ export function AppHeader() {
         <span className="mx-1 h-[18px] w-px bg-border" aria-hidden />
         <span>Feedme</span>
       </div>
-      <ThemeToggle />
+      <div className="flex items-center gap-1">
+        {actions}
+        <ThemeToggle />
+      </div>
     </header>
   );
 }
