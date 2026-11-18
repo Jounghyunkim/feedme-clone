@@ -30,7 +30,7 @@ Radius and spacing: `--radius` `0.625rem`; spacing follows the Tailwind scale.
 
 Source: `components/ui`. Update this section when it changes.
 
-- `Button`
+- `Alert`, `Button`, `Card`, `Empty`, `Input`, `InputGroup`, `Separator`, `Skeleton`, `Sonner`, `Textarea`, `Toggle`, `ToggleGroup`
 
 ## Rejected patterns
 
