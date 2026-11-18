@@ -8,11 +8,19 @@ export default function Home() {
     <main className="flex flex-1 flex-col items-center justify-center px-6 py-24">
       <div className="flex w-full max-w-xl flex-col gap-10">
         <Image
-          className="h-5 w-[100px] dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          className="h-12 w-auto self-start dark:hidden"
+          src="/brand/LGE_Logo_HeritageRed_Grey_RGB.png"
+          alt="LG"
+          width={2081}
+          height={1127}
+          priority
+        />
+        <Image
+          className="hidden h-12 w-auto self-start dark:block"
+          src="/brand/LGE_Logo_HeritageRed_White_RGB.png"
+          alt="LG"
+          width={2081}
+          height={1127}
           priority
         />
         <div className="flex flex-col gap-4">
