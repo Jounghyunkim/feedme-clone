@@ -73,6 +73,7 @@ export function ExportCard({
     a.click();
     a.remove();
     URL.revokeObjectURL(href);
+    toast.success("파일을 저장했어요", { description: a.download });
   }
 
   function openIn(service: LlmService) {
@@ -101,7 +102,7 @@ export function ExportCard({
   }
 
   return (
-    <Card className="gap-3.5 p-4 lg:sticky lg:top-4 lg:z-10">
+    <Card className="gap-3.5 p-4">
       <div className="flex flex-wrap items-center gap-2">
         <span className="basis-full text-[13px] font-medium text-muted-foreground sm:basis-auto sm:flex-1">
           내보내기
